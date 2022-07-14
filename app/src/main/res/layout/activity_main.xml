@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/stop"
+        android:layout_width="214dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#8BC34A"
+        android:gravity="center"
+        android:onClick="stopService"
+        android:text="Stop"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/start"
+        android:layout_width="214dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#8BC34A"
+        android:gravity="center"
+        android:onClick="startServiceV"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8BC34A"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <TextView
+        android:id="@+id/textNum"
+        android:layout_width="220dp"
+        android:layout_height="125dp"
+        android:text="SOS Will Be Sent To\nYour Saved Contacts"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_baseline_more_vert_24"
+        android:backgroundTint="#A9374923"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="PopupMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="355dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/back"
+        android:backgroundTint="#77D671"
+        android:buttonTint="#2E2929"
+        android:padding="10dp"
+        android:shadowColor="#AF7878"
+        android:text="Drive Mode"
+        android:textAlignment="textStart"
+        android:textColor="#9C1E1818"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNum" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
